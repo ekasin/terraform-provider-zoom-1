@@ -216,6 +216,7 @@ func (c *Client) updatehttpRequest(path,method string, body bytes.Buffer, item *
     }
 }
 
+
 func (c *Client) DeleteItem(userId string) error {
 	_, err := c.deletehttpRequest(fmt.Sprintf("%s", userId), "DELETE", bytes.Buffer{})
 	if err != nil {
